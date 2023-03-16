@@ -1,0 +1,390 @@
+*{
+  font-family: 'Crimson Text', serif;
+  font-size: 3vh;
+}
+.fontarticoli {
+    font-family: 'Crimson Text', serif;
+    font-size: 3vh;
+  }
+.fonttitolo{
+    font-family: 'Cormorant Garamond', serif;
+  }
+.colorblack{
+    color: black;
+}
+.colorgold{
+    color: #e8b923;
+}
+.intestazionesito{
+  font-size: 8vh;
+}
+.caroselloheader{
+    height: 50vh;
+}
+.imgcarosello{
+  height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+}
+.tasticarosello{
+  margin: 0%;
+  text-shadow: 30px black;
+  color: black;
+}
+.titolocarosello{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  z-index: 1;
+  font-size: 8vh ;
+}
+.sottotitolocarosello{
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  z-index: 1;
+  -webkit-text-stroke: 0.5px lightgray;
+  font-size: 3.5vh;
+}
+.cardarticolo{
+  border-radius: 0;
+  border: 1px solid lightgray;
+  position: relative;
+  height: 95vh;
+  cursor: pointer;
+}
+
+.cardarticolo:hover{
+  transition: 0.4s;
+  box-shadow: 2px 2px 2px 2px rgb(225, 225, 225);
+}
+.contenitorebuttoncardrecensioni{
+  padding: 0%;
+  position:absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 5%);
+}
+.titolocard{
+  color: black;
+}
+.titolocard:hover{
+  color: #e8b923;   
+}
+.imgcardarticolo{
+  height: 65%;
+  width: 100%;
+}
+.tastocardrecensioni{
+  background-color: black;
+  color: white;
+}
+.tastocardrecensioni:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.containerfotochisiamo{
+  background-image: url(cultscene.jpg);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.linklavoraconnoi{
+  text-decoration: none;
+}
+.linklavoraconnoi:hover{
+  text-decoration: underline;
+}
+.containerfotolavoraconnoi{
+  background-image: url('Brody-Truffaut.webp');
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#user-icon {
+  cursor: pointer;
+}
+#registration-form {
+  display: none;
+}
+.registration-form {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.registration-form form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.registration-form form h2 {
+  margin-top: 0;
+}
+
+.registration-form form label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.registration-form form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.linkfooter{
+  text-decoration: none;
+  margin-top: 10vh;
+}
+.linkfooter:hover{
+  color: white;
+}
+.arrowhomepage{
+ float: right;
+ color: black;
+ text-align: right;
+}
+.arrowhomepage:hover{
+  color: #e8b923;
+}
+.navbarlinks:hover{
+  transition: color 0.3s ease-in-out;
+  color: white;
+}
+.iconautentenavbar{
+  background: transparent;
+}
+@media screen and (max-width: 692px) {
+   .containerarticoli{
+    width: 90vw;
+  }
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23e8b923' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.tastonextcarosello{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z' fill='%23ffd700'/%3e%3c/svg%3e");
+}
+.tastoprevcarosello{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z' fill='%23ffd700'/%3e%3c/svg%3e");
+}
+.iconachiusura{
+  float: right;
+  cursor: pointer;
+}
+.formregistrati{
+  width: 45vw;
+}
+.contenitoreinputform{
+  width: 40vw;
+}
+@media screen and (max-width: 700px) {
+  .formregistrati{
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contenitoreinputform{
+    width: 60vw;
+  }
+}
+
+.tastoregistrazione{
+  color: white;
+  background-color: black;
+}
+.tastoregistrazione:hover{
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+.tastoaccedi{
+  text-decoration: none;
+  color: black;
+}
+.tastoaccedi:hover{
+  text-decoration: underline;
+  color: black;
+}
+.alerterroreregistrazione{
+  color: red;
+  font-size: 2.6vh;
+}
+.mostrapassword{
+  float: right;
+  display: block;
+  cursor: pointer;
+}
+.mostrapasswordlogin{
+  float: right;
+  display: block;
+  cursor: pointer;
+}
+.fromricercaarticoli{
+  width: 15%;
+}
+.iconasearchnavbar{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+  color: #e8b923;
+}
+.arrowhomepage{
+  float: right;
+}
+.cardarticolocineculture{
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+.cardarticolocineculturecorrelati{
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+.cardarticolocineculturecorrelati:hover{
+  transition: 0.4s;
+  box-shadow: 2px 2px 2px 2px rgb(225, 225, 225);
+  
+}
+@media screen and (max-width: 1200px) {
+  .cardarticolocineculture{
+    width: 100vw;
+    height: 130vh;
+    border: 1px solid lightgray;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .cardarticolocineculture{
+    width: 100vw;
+    height: 130vh;
+    border: 1px solid lightgray;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cardarticolocineculture{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid lightgray;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cardarticolocineculture{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid lightgray;
+    cursor: pointer;
+  }
+}
+.cardarticolocineculture:hover{
+  transition: 0.4s;
+  box-shadow: 2px 2px 2px 2px rgb(225, 225, 225); 
+}
+.imgarticolocineculture{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center center;
+}
+.contenitoretastorecensionecineculture{
+  position:absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tastorecensionecineculture{
+  margin-bottom: 0;
+  background-color: black;
+  color: white;
+}
+.tastorecensionecineculture:hover{
+  margin-bottom: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.titolocardcineculture{
+  cursor: pointer;
+  margin-top: 0.8vh;
+  color: black;
+}
+.titolocardcineculture:hover{
+  color: #e8b923;
+}
+.imgarticolosingolocineculture{
+  width: 80%;
+  height: 90vh;
+}
+@media screen and (max-width: 1000px) {
+  .imgarticolosingolocineculture{
+    width: 100%;
+    height: 90vh;
+  }
+}
+@media screen and (max-width: 850px) {
+  .imgarticolosingolocineculture{
+    width: 100%;
+    height: 60vh;
+  }
+}
+.search-bar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+}  
+.buttonsearchbar{
+  background-color: black;
+  color: #e8b923;
+  width: 5vw;
+}
+.buttonsearchbar:hover{
+  color: black;
+  background-color: white;
+  border: 3px solid black;
+}
+.contenitoresearchbar{
+  color: black;
+  width: 35vw;
+  height: 10vh;
+  border-radius: 0;
+}
+.contenitoresearchbar > input{
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid black !important;
+}
+.col {
+  display: block;
+}
