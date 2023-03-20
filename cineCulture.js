@@ -12,7 +12,7 @@ fetch("APIcineCulture.json")
       let poster = articolo.poster;
       // creazione colonna per ogi articolo
       let card = document.createElement('div');
-      card.classList.add('col-10');
+      card.classList.add('col-11');
       card.classList.add('mx-auto');
       card.classList.add('d-flex');
       card.classList.add('justify-content-center');

@@ -26,6 +26,138 @@
   object-fit: cover;
   object-position: center top;
 }
+
+/* STYLE DA MOBILE */
+@media only screen and (max-width: 768px) {
+  /* homepage mobile */
+  .intestazionesito{
+    font-size: 4vh;
+  }
+  .fonttitolo{
+    font-size: 4vh !important;
+  }
+  .imgcarosello{
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+  .caroselloheader{
+    height: 30vh;
+  }
+  .titolocarosello{
+    position: absolute !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    bottom: -26% !important;
+    z-index: 1;
+    font-size: 4vh !important;
+  }
+  .sottotitolocarosello{
+    color: white;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    bottom: -13% !important;
+    z-index: 1;
+    -webkit-text-stroke: 0.5px lightgray;
+    font-size: 1.5vh !important;
+  }
+  .h1mobile{
+    font-size: 3vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .tuttelerecensioni{
+    display: none !important;
+  }
+  .iconafrecciatuttelerecensioni{
+   display: none !important;
+  }
+  .navlinkmobile {
+    font-size: 2.5vh;
+  }
+   /* fine homepage mobile */
+
+   /* chi siamo mobile */
+  .containerfotochisiamo{
+    height: 30vh !important;
+  }
+  .titolocarosellochisiamo{
+    position: relative !important;
+    transform: translate(-50%, -50%) !important;
+    left: 50% !important;
+    top: 24.5vh !important;
+    z-index: 1;
+    font-size: 4vh !important;
+  }
+  .sottotitolocarosellochisiamo{
+   display: none !important;
+  }
+  .containersezionechisiamo{
+    margin-top: 5% !important;
+  }
+  .containersezionechisiamo2{
+    margin-top: -10% !important;
+  }
+  .colonnafoto1chisiamo{
+    height: 40vh;
+  }
+  .sezioneacosaserve{
+    margin-top: -15% !important;
+  }
+  /* fine chi siamo mobile */
+
+  /* cineculture mobile */
+  .cardarticolocineculture{
+    width: 100vw;
+    height: 120vh;
+    border: 1px solid lightgray;
+    cursor: pointer;
+  }
+  .cardarticolocineculturecorrelati:hover{
+    transition: 0.4s;
+    box-shadow: 2px 2px 2px 2px rgb(225, 225, 225);   
+  }
+  .titolocardcineculture{
+    margin-top: -5% !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    cursor: pointer;
+    margin-top: 0.8vh;
+    color: black;
+  }
+  .titolocardcineculture:hover{
+    color: #e8b923;
+  }
+  .imgarticolocineculture{
+    width: 190%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .contenitoretastorecensionecineculture{
+    position:absolute;
+    bottom: -10% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .tastorecensionecineculture{
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+  }
+  .tastorecensionecineculture:hover{
+    margin-bottom: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+}
+/* FINE STYLE MOBILE */
+
+.tuttelerecensioni{
+  display: inline;
+}
 .tasticarosello{
   margin: 0%;
   text-shadow: 30px black;
@@ -40,6 +172,24 @@
   font-size: 8vh ;
 }
 .sottotitolocarosello{
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  z-index: 1;
+  -webkit-text-stroke: 0.5px lightgray;
+  font-size: 3.5vh;
+}
+.titolocarosellochisiamo{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  z-index: 1;
+  font-size: 8vh ;
+}
+.sottotitolocarosellochisiamo{
   color: white;
   position: absolute;
   left: 50%;
