@@ -72,6 +72,7 @@ titleElement.classList.add('fontitolo');
 titleElement.classList.add('text-uppercase');
 titleElement.classList.add('text-center');
 titleElement.classList.add('my-4');
+titleElement.classList.add('h1mobile');
 
 const posterElement = document.createElement('img');
 posterElement.src = articolo.poster;

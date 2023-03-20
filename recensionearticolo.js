@@ -13,7 +13,7 @@ fetch("APIreview.json")
 
     let contenitorerecensionearticolo = document.querySelector('.contenitorerecensionearticolo')
     contenitorerecensionearticolo.innerHTML = `
-      <h1 class="titolorecensionearticolo text-center py-3 fonttitolo text-uppercase">Recensione: ${titolo} </h1>
+      <h1 class="titolorecensionearticolo text-center py-3 fonttitolo text-uppercase h1mobile">Recensione: ${titolo} </h1>
 
       <div class="container">
       <div class="row">
@@ -69,11 +69,11 @@ fetch("APIreview.json")
     // creazione colonna per ogi articolo
   let card = document.createElement('div');
   card.classList.add('col-10');
-  card.classList.add('mx-auto');
   card.classList.add('col-sm-6');
   card.classList.add('col-md-3'); 
   card.classList.add('d-flex')
   card.classList.add('my-1');
+  card.classList.add('mx-auto');
   rowrecensionicorrelate.appendChild(card)
   // card di ogni articolo:
   card.innerHTML= 

@@ -1,6 +1,5 @@
 -mettere favicon
 -responsive mobile
--cambiare icona navbar in giallo
 
 -LINK API: http://www.omdbapi.com/?s=Steven Spielberg&apikey=a9c3db22 (filtrato per film con nome 'steven spielberg')
 
