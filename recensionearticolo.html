@@ -81,55 +81,54 @@
 
  
 
- <!-- form registrazione utente visibile al click sull'icona utente -->
-<div id="registration-form" class="registration-form d-relative" style="display:none;">
-  <form onsubmit="return validateForm()" class="rounded-0 px-0 py-0 d-relative formregistrati">
-    <a id="close-icon" class="fa fa-times text-decoration-none text-black iconachiusura mx-0 my-0 px-0 py-0"> <!-- icona per chiudere il form -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg mx-1 my-1" viewBox="0 0 16 16">
-        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-      </svg>
-    </a>
-    <h4 class="pt-4 colorgold fontitolo text-center w-100">Registrati</h4>
-    <div class="contenitoreinputform mx-auto">
-      <label for="username" class="">Nome utente:</label>
-      <input type="text" id="username" name="username" class="rounded-0" required>
-      <label for="email" class="">Email:</label>
-      <input type="email" id="email" name="email" class="rounded-0" required>
-      <label for="password" >Password:</label>
-      <input type="password" id="password" name="password" required class="rounded-0">
-      <label for="password" class="">Conferma Password:</label>
-      <input type="password" id="passwordconfirm" name="passwordconfirm" required class="rounded-0">
-      <div class="password-toggle-icon fa fa-eye mostrapassword">Mostra password</div>
-      
-      <button type="submit" class="rounded-0 py-1 px-3 btn mb-2 mt-5 tastoregistrazione d-block mx-auto">Registrati</button>
-      <p>Sei già registrato? <a href="#" id="login-link" class="tastoaccedi mb-0 pb-0">Accedi</a></p>
-      <p class="alerterroreregistrazione py-0 mt-0 mb-0 w-100"></p> 
+     <!-- form registrazione utente visibile al click sull'icona utente -->
+     <div id="registration-form" class="registration-form d-relative" style="display:none;">
+      <form onsubmit="return validateForm()" class="rounded-0 px-0 py-0 d-relative formregistrati">
+        <a id="close-icon" class="text-decoration-none text-black iconachiusura mx-0 my-0 px-0 py-0"> <!-- icona per chiudere il form -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg mx-1 my-1" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+          </svg>
+        </a>
+        <h4 class="pt-4 colorgold fontitolo text-center w-100">Registrati</h4>
+        <div class="contenitoreinputform mx-auto">
+          <label for="username" class="">Nome utente:</label>
+          <input type="text" id="username" name="username" class="rounded-0" required>
+          <label for="email" class="">Email:</label>
+          <input type="email" id="email" name="email" class="rounded-0" required>
+          <label for="password" >Password:</label>
+          <input type="password" id="password" name="password" required class="rounded-0">
+          <label for="password" class="">Conferma Password:</label>
+          <input type="password" id="passwordconfirm" name="passwordconfirm" required class="rounded-0">
+          <div class="password-toggle-icon mostrapassword">Mostra password</div>
+          
+          <button type="submit" class="rounded-0 py-1 px-3 btn mb-2 mt-5 tastoregistrazione d-block mx-auto">Registrati</button>
+          <p>Sei già registrato? <a href="#" id="login-link" class="tastoaccedi mb-0 pb-0">Accedi</a></p>
+          <p class="alerterroreregistrazione py-0 mt-0 mb-0 w-100"></p> 
+        </div>
+      </form>
     </div>
-  </form>
-</div>
-
-<!-- form di login nascosto -->
-<div id="login-form" class="registration-form d-relative" style="display:none;">
-  
-  <form class="d-relative px-0 py-0 rounded-0 formregistrati">
-    <a id="close-icon-2" class="fa fa-times text-decoration-none text-black iconachiusura mx-0 my-0 px-0 py-0"> <!-- icona per chiudere il form -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg mx-1 my-1" viewBox="0 0 16 16">
-        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-      </svg>
-    </a> 
-    <h4 class="pt-4 colorgold fontitolo">Accedi</h4>
-    <div class="contenitoreinputform mx-auto">
-        <label for="email">Email:</label>
-        <input type="email" id="email-login" name="email" class="rounded-0" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password-login" name="password" class="rounded-0" required>
-        <div class="password-toggle-icon fa fa-eye mostrapasswordlogin">Mostra password</div>
-        <button type="submit" class="rounded-0 py-2 px-3 btn my-2 tastoregistrazione d-block mx-auto mt-5">Accedi</button>
-        <p class="pb-3 mb-0">Sei già registrato? <a href="#" id="register-link" class="tastoaccedi">registrati</a></p>
-    </div>
-  </form>
-</div>
     
+    <!-- form di login nascosto -->
+    <div id="login-form" class="registration-form d-relative" style="display:none;">
+      
+      <form class="d-relative px-0 py-0 rounded-0 formregistrati">
+        <a id="close-icon-2" class="text-decoration-none text-black iconachiusura mx-0 my-0 px-0 py-0"> <!-- icona per chiudere il form -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg mx-1 my-1" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+          </svg>
+        </a> 
+        <h4 class="pt-4 colorgold fontitolo">Accedi</h4>
+        <div class="contenitoreinputform mx-auto">
+            <label for="email">Email:</label>
+            <input type="email" id="email-login" name="email" class="rounded-0" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password-login" name="password" class="rounded-0" required>
+            <div class="password-toggle-icon mostrapasswordlogin">Mostra password</div>
+            <button type="submit" class="rounded-0 py-2 px-3 btn my-2 tastoregistrazione d-block mx-auto mt-5">Accedi</button>
+            <p class="pb-3 mb-0">Sei già registrato? <a href="#" id="register-link" class="tastoaccedi">registrati</a></p>
+        </div>
+      </form>
+    </div>
     <!-- Footer-->
     <footer class="text-center text-lg-start bg-black pb-2">
       <!-- Section: Links  -->
