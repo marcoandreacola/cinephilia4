@@ -31,22 +31,22 @@
 @media only screen and (max-width: 450px) {
   /* homepage mobile */
   .intestazionesito{
-    font-size: 4vh;
+    font-size: 5vh;
   }
   .fonttitolo{
     font-size: 4vh !important;
   }
   .imgcarosello{
-    height: 100% !important;
-    object-fit: contain;
+    height: 40vh !important;
+    object-fit: cover;
     object-position: center center;
   }
   .titolocarosello{
     position: absolute !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    bottom: -26% !important;
-    z-index: 1;
+    bottom: -15% !important;
+    z-index: 1 !important;
     font-size: 4vh !important;
   }
   .sottotitolocarosello{
@@ -54,10 +54,10 @@
     position: absolute !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    bottom: -13% !important;
+    bottom: -8% !important;
     z-index: 1;
     -webkit-text-stroke: 0.5px lightgray;
-    font-size: 1.5vh !important;
+    font-size: 2vh !important;
   }
   .h1mobile{
     font-size: 3vh !important;
@@ -83,8 +83,9 @@
     border-radius: 0;
     border: 1px solid lightgray;
     position: relative;
-    height: 80vh !important;
+    height: 78vh !important;
     cursor: pointer;
+    width: 70vw !important;
   }
   .imgcardarticolo{
     height: 45vh !important;
@@ -101,13 +102,13 @@
 
    /* chi siamo mobile */
   .containerfotochisiamo{
-    height: 30vh !important;
+    height: 40vh !important;
   }
   .titolocarosellochisiamo{
     position: relative !important;
     transform: translate(-50%, -50%) !important;
     left: 50% !important;
-    top: 24.5vh !important;
+    top: 35vh !important;
     z-index: 1;
     font-size: 4vh !important;
   }
@@ -177,13 +178,13 @@
 
   /* lavora con noi mobile */
   .containerfotolavoraconnoi{
-    height: 30vh !important;
+    height: 40vh !important;
   }
   .titolofotolavoraconnoi{
     position: relative !important;
     transform: translate(-50%, -50%) !important;
     left: 50% !important;
-    top: 24.5vh !important;
+    top: 35vh !important;
     z-index: 1;
     font-size: 4vh !important;
   }
